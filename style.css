@@ -132,6 +132,10 @@ header{
     text-align: center;
 }
 
+.social-media>ul{
+    padding: 0;
+}
+
 .social-links-container{
     display: flex;
     flex-direction: row;
