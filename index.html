@@ -20,73 +20,94 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="whoim">
             <img src="https://avatars.githubusercontent.com/u/66342961?v=4" alt="Foto de perfil do GitHub Igor Azevedo" class="profile-picture">
-            <h1 class="page-title">Olá, eu sou Igor,
-                Desenvolvedor Web
-            </h1>
-            <!-- Alterar!!! -->
-            <p class="page-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <!-- Alterar!!! -->
-            <a href="" class="download-button">Baixar CV</a>
+             <div class="whoim-container">
+                 <h1 class="page-title">Olá, eu sou Igor,
+                     Desenvolvedor Web
+                 </h1>
+                 <p class="page-description">Desenvolvedor em formação com experiência prática em HTML, CSS, JavaScript, Typescript, React.js e integração com APIs RESTful. Familiaridade com ferramentas como Git e Tailwind CSS. Proativo e com foco em resolução de problemas, busco contribuir para o sucesso de projetos enquanto continuo evoluindo como profissional.</p>
+                 <a href="https://drive.google.com/file/d/1d7b-gb_tyO-f6itbGLJc8cusfHmmYA80/view" target="_blank" class="download-button">Baixar CV</a>
+             </div>
         </section>
         <hr class="section-divider">
         <section id="projects">
             <h2 class="section-subtitle">Projetos em destaque</h2>
             <ul class="projects-list">
                 <li class="project-container">
-                    <img src="./assets/Rectangle 30.svg" alt="Captura de tela da aplicação web 'To-do list'" class="project-img">
-                    <h3 class="project-title">To-Do List</h3>
-                    <span class="project-type">Landing Page</span>
-                    <p class="project-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="" class="project-anchor">Link do repositório</a>
+                    <img src="./assets/todolist.png" alt="Captura de tela da aplicação web 'To-do list'" class="project-img">
+                    <div class="card-description">
+                        <h3 class="project-title">To-Do List</h3>
+                        <span class="project-type">Landing Page</span>
+                        <p class="project-description">No desenvolvimento do projeto, utilizei <strong>React</strong> com <strong>TypeScript</strong> no Front-End e <strong>Node.js</strong> com <strong>TypeScript</strong> no Back-End. A API foi implementada com autenticação de usuário utilizando <strong>JWT</strong> para garantir a segurança das rotas. Para a estilização da interface, adotei o <strong>Tailwind CSS</strong>. No Back-End, utilizei o <strong>Prisma</strong> como ORM para facilitar a interação com o banco de dados relacional <strong>MySQL</strong>. Todo o ambiente de banco de dados foi gerenciado em um container <strong>Docker</strong>.</p>
+                        <a href="https://github.com/igormath/jack-experts-challenge" class="project-anchor" target="_blank">Link do repositório</a>
+                    </div>
                 </li>
+                <hr class="project-divider">
                 <li class="project-container">
-                    <img src="./assets/Rectangle 30.svg" alt="Captura de tela da aplicação web 'Pet-shop Landing Page'" class="project-img">
-                    <h3 class="project-title">Pet-shop Landing Page</h3>
-                    <span class="project-type">Landing Page</span>
-                    <p class="project-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="" class="project-anchor">Link do repositório</a>
+                    <img src="./assets/petshop_home.png" alt="Captura de tela da aplicação web 'Pet-shop Landing Page'" class="project-img">
+                    <div class="card-description">
+                        <h3 class="project-title">Pet-shop Landing Page</h3>
+                        <span class="project-type">Landing Page</span>
+                        <p class="project-description">Para este projeto, utilizei <strong>React</strong> com <strong>TypeScript</strong> para construir o Front-End e <strong>Node.js</strong> com <strong>TypeScript</strong> no Back-End. Para a estilização, optei pelo uso de <strong>CSS Vanilla</strong>. Além disso, desenvolvi uma versão alternativa da interface utilizando <strong>Vue.js</strong> como framework Front-End. Este projeto foi desenvolvido como parte da disciplina Programação IV da Universidade de Pernambuco.</p>
+                        <a href="https://github.com/igormath/pethop-node-react-ts" class="project-anchor" target="_blank">Link do repositório — versão em React.js</a> 
+                        <a href="https://github.com/igormath/prog4-frontend" class="project-anchor" target="_blank">Link do repositório — versão alternativa do Front-End em Vue.js</a>
+                    </div>
                 </li>
+                <hr class="project-divider">
                 <li class="project-container">
-                    <img src="./assets/Rectangle 30.svg" alt="Captura de tela do dashboard RAD UPE" class="project-img">
-                    <h3 class="project-title">Iniciação Científica</h3>
-                    <span class="project-type">Dashboard</span>
-                    <p class="project-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="" class="project-anchor">Link do repositório</a>
+                    <img src="./assets/ic_rad.png" alt="Captura de tela do dashboard RAD UPE" class="project-img">
+                    <div class="card-description">
+                        <h3 class="project-title">Iniciação Científica</h3>
+                        <span class="project-type">Dashboard</span>
+                        <p class="project-description">Desenvolvi um Dashboard para auxiliar na tomada de decisões com base em KPIs (Indicadores-Chave de Desempenho) relacionados aos docentes da Universidade de Pernambuco. Para a visualização dos dados, utilizei a biblioteca <strong>Plotly</strong> do <strong>Python</strong>, que permite a criação de gráficos interativos e dinâmicos. Por fim, realizei o deploy do Dashboard na plataforma cloud <strong>Amazon AWS</strong>.</p>
+                        <a href="https://github.com/igormath/ic-dataviz" class="project-anchor" target="_blank">Link do repositório</a>
+                    </div>
                 </li>
+                <hr class="project-divider">
                 <li class="project-container">
-                    <img src="./assets/Rectangle 30.svg" alt="Captura de tela da aplicação web 'Form-Validation'" class="project-img">
-                    <h3 class="project-title">Form Validation</h3>
-                    <span class="project-type">Landing Page</span>
-                    <p class="project-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="" class="project-anchor">Link do repositório</a>
+                    <img src="./assets/url-shortening.png" alt="Captura de tela da aplicação web 'URL Shortening'" class="project-img">
+                    <div class="card-description">
+                        <h3 class="project-title">URL Shortening</h3>
+                        <span class="project-type">Landing Page</span>
+                        <p class="project-description">Neste projeto, desenvolvi a interface utilizando React.js para consumir uma API RESTful de encurtamento de links. A aplicação permite que os usuários insiram URLs e recebam links encurtados de forma eficiente. Por fim, realizei o deploy da aplicação na plataforma Vercel.</p>
+                        <a href="https://github.com/igormath/url-shortening" class="project-anchor" target="_blank">Link do repositório</a>
+                    </div>
                 </li>
+                <hr class="project-divider">
                 <li class="project-container">
-                    <img src="./assets/Rectangle 30.svg" alt="Captura de tela da aplicação web 'URL Shortening'" class="project-img">
-                    <h3 class="project-title">URL Shortening</h3>
-                    <span class="project-type">Landing Page</span>
-                    <p class="project-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="" class="project-anchor">Link do repositório</a>
+                    <img src="./assets/sokoban.png" alt="Captura de tela da aplicação web 'Form-Validation'" class="project-img">
+                    <div class="card-description">
+                        <h3 class="project-title">Sokoban</h3>
+                        <span class="project-type">Desktop Game</span>
+                        <p class="project-description">Utilizei a biblioteca RayLib da linguagem <strong>C</strong> para refazer a segunda fase do jogo puzzle Sokoban. Este projeto foi desenvolvido como parte da disciplina Programação 1 do curso de Sistemas de Informação da Universidade de Pernambuco.</p>
+                        <a href="https://github.com/igormath/sokoban" class="project-anchor" target="_blank">Link do repositório</a>
+                    </div>
                 </li>
             </ul>
         </section>
     </main>
     <hr class="section-divider">
     <footer id="social-media">
+        <h2 class="section-subtitle">Informações de Contato</h2>
         <ul class="social-links-container">
             <li class="footer-list">
-                <a href="https://github.com/igormath">
+                <a href="https://github.com/igormath" target="_blank">
                     <img src="./assets/github-svgrepo-com.svg" alt="Github logo" class="social-logos">
                 </a>
             </li>
+            <li class="mail">
+                <a href="mailto:matheus.igor.p@gmail.com">
+                    <img src="./assets/gmail-svgrepo-com.svg" alt="Email Logo" class="social-logos">
+                </a>
+            </li>
             <li class="footer-list">
-                <a href="https://www.linkedin.com/in/igorazev/">
+                <a href="https://www.linkedin.com/in/igorazev/" target="_blank">
                     <img src="./assets/linkedin-svgrepo-com.svg" alt="LinkedIn logo" class="social-logos">
                 </a>
             </li>
         </ul>
-        <p class="footer-p">©2025 Igor Azevedo</p>
+        <p class="footer-p">Igor Azevedo ©2025</p>
     </footer>
     <script src="./script.js"></script>
 </body>

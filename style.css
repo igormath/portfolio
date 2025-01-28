@@ -5,6 +5,7 @@ body{
     font-family: "Heebo", serif;
     font-size: 62.5%;
     background-color: #282A36;
+    overflow-x: hidden;
 }
 
 @keyframes slideInFromRight {
@@ -19,8 +20,8 @@ body{
 }
 
 header, main, section {
-    animation: slideInFromRight 0.8s ease-out forwards;
-    opacity: 0;
+    animation: slideInFromRight 0.6s ease-out forwards;
+    opacity: 0; /* Inicia invisível */
 }
 
 header {
@@ -31,7 +32,7 @@ main {
     animation-delay: 0.4s;
 }
 
-footer {
+section {
     animation-delay: 0.6s;
 }
 
@@ -43,7 +44,7 @@ header{
     cursor: pointer;
     display: block;
     margin: 3vh 0 0 90vw;
-    width: 30px;
+    width: 6vw;
 }
 
 .menu-links {
@@ -91,7 +92,7 @@ header{
 
 .download-button{
     margin: 0 auto;
-    width: 55vw;
+    width: 55%;
     background-color: #FF79C6;
     color: #F8F8F2;
     display: block;
@@ -119,16 +120,21 @@ header{
     width: 90vw;
     display: block;
     margin: 0 auto;
+    padding: 0;
 }
 
 .project-container{
     margin: 5vh 0;
+    background-color: #44475A;
+    padding: 3vh 2vw;
+    border-radius: 2px;
 }
 
 .project-img{
     width: 80%;
     display: block;
     margin: 0 auto;
+    border-radius: 6px;
 }
 
 .project-title{
@@ -154,7 +160,7 @@ header{
     color: #50FA7B;
     font-size: 1.6rem;
     display: block;
-    text-align: center;
+    text-align: start;
 }
 
 .social-media>ul{
@@ -164,8 +170,8 @@ header{
 .social-links-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
+    width: 70%;
     margin: 0 auto;
     padding: 0;
 }
@@ -185,9 +191,117 @@ header{
     width: 12vw;
 }
 
+.project-divider{
+    display: none;
+}
+
 @media (min-width: 769px) {
     .menu-icon{
         display: none;
     }
+
+    .menu-links, .menu-links.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 4vh 0;
+        padding: 0 5vw;
+        max-height: fit-content;
+    }
+
+    .nav-link{
+        text-decoration: none;
+    }
+
+    .whoim{
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .whoim-container{
+        width: 40vw;
+        align-items: flex-start;
+    }
+
+    .profile-picture{
+        margin: 0;
+    }
+
+    .page-title{
+        margin: 0;
+        text-align: start;
+    }
+
+    .page-description{
+        margin: 3vh 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .download-button{
+        margin: 0;
+        max-width: 30%;
+    }
+
+    #projects, #social-media{
+        width: 75vw;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section-subtitle{
+        text-align: start;
+    }
+
+    .project-container{
+        display: flex;
+        background-color: #282A36;
+    }
     
+    .project-img{
+        width: 22%;
+        margin: 0;
+    }
+
+    .card-description{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2vw;
+    }
+
+    .project-title, .project-type, .project-description{
+        text-align: start;
+    }
+
+    .project-title{
+        margin: 0;
+    }
+
+    .project-description{
+        max-width: 50vw;
+    }
+
+    .project-divider {
+        display: block;
+        width: 50vw;
+        border: 0;
+        height: 1px;
+        background-color: #F8F8F2;
+        margin: 5vh 10vw;
+    }
+
+    .social-links-container{
+        justify-content: center;
+    }
+
+    .social-logos{
+        width: 3vw;
+    }
+
+    .mail{
+        margin: 0 2vw;
+    }
 }
