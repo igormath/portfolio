@@ -195,6 +195,11 @@ header{
     display: none;
 }
 
+.card-link{
+    color: #50FA7B;
+    font-weight: bold;
+}
+
 @media (min-width: 769px) {
     .menu-icon{
         display: none;
